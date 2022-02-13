@@ -1,0 +1,43 @@
+#N canvas 570 405 1680 967 12;
+#X obj 72 297 mtof;
+#X obj 74 269 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 418 101 OSCILLATORS;
+#X text 747 100 FILTERS;
+#X text 1176 104 AMP;
+#X obj 422 418 osc~;
+#X text 329 205 OSC 1;
+#X text 324 411 OSC 2;
+#X obj 1070 661 dac~;
+#X obj 417 204 phasor~;
+#X obj 1085 195 / 127;
+#X obj 1089 169 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 1084 233 pack 0 50;
+#X obj 1084 264 line~;
+#X obj 1067 303 *~;
+#X obj 1116 392 / 127;
+#X obj 1120 366 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 1115 430 pack 0 50;
+#X obj 1115 461 line~;
+#X obj 1098 500 *~;
+#X text 1256 301 TODO: subpatch for this section;
+#X text 70 226 TODO: midi/OSC input;
+#X text 417 134 TODO: Build out;
+#X text 743 145 TODO: Build out;
+#X connect 0 0 9 0;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 5 0 19 0;
+#X connect 9 0 14 0;
+#X connect 10 0 12 0;
+#X connect 11 0 10 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 1;
+#X connect 14 0 8 0;
+#X connect 15 0 17 0;
+#X connect 16 0 15 0;
+#X connect 17 0 18 0;
+#X connect 18 0 19 1;
+#X connect 19 0 8 1;
